@@ -170,6 +170,29 @@ main {
     background-color: var(--cl-primary_brand);
     padding: 40px 32px;
 }
+
+.accent-button {
+    background: var(--cl-primary_brand);
+    color: var(--cl-white_background);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    padding: 16px 32px;
+    margin: 48px auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accent-button:hover,
+.accent-button:focus {
+    background: var(--cl-pressed_state);
+}
 /* general styles end */
 
 
@@ -294,28 +317,7 @@ main {
     max-width: 496px;
 }
 
-.hero-button {
-    background: var(--cl-primary_brand);
-    color: var(--cl-white_background);
 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-
-    padding: 16px 32px;
-    margin: 48px auto;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    min-width: 169px;
-    height: 56px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-    background: var(--cl-pressed_state);
-}
 /* hero end */
 
 
@@ -484,6 +486,10 @@ main {
     color: var(--cl-white_background);
 }
 
+.subscription-img {
+    margin-left: 16px; 
+}
+
 .footer-form {
     display: flex;
     gap: 24px;
@@ -500,25 +506,20 @@ main {
     padding-left: 16px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;  
+    color: var(--cl-white_background)
 }
 
 .footer-form-input::placeholder {
     color: var(--cl-white_background);
 }
 
-/* .footer-form-btn {
+.footer-form-btn {
     min-width: 165px; 
     height: 40px;
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--cl-white_background);
-    background-color: var(--cl-primary_brand);
-    border-radius: 4px;
-} */
+}
 /* footer end */
 
 
