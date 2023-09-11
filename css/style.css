@@ -809,4 +809,12 @@ main {
      justify-content: center;
      fill: transparent; 
 }
+
+.modal-btn-submit {
+    height: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+}
 /* modal window end */
