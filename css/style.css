@@ -195,25 +195,25 @@ main {
 }
 
 /* Checked state */
-.hidden-checkbox:checked + .modal-form-checkbox {
+.hidden-checkbox:checked + label > .modal-form-checkbox {
     border: none;
     background-color: var(--cl-pressed_state);
     fill: var( --cl-light);
 }
 
 /* Focus state */
-.hidden-checkbox:focus-visible + .modal-form-checkbox {
+.hidden-checkbox:focus-visible + label > .modal-form-checkbox  {
     outline: 2px solid var(--cl-pressed_state);
     outline-offset: 1px;
 }
 
-.hidden-checkbox:checked + .modal-form-checkbox > .modal-form-checkbox-icon {
+.hidden-checkbox:checked + label > .modal-form-checkbox > .modal-form-checkbox-icon {
     opacity: 1;
     transform: scale(1);
 }
 
 .modal-form-checkbox-icon {
-    fill: var(--cl-dark);
+    stroke: var(--cl-light);
     opacity: 0;
     transform: scale(0.2);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
