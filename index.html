@@ -441,6 +441,89 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="modal-form" name="reviews-form">
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-name">Name</label>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+              minlength="3"
+              placeholder="Name LastName"
+            />
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-phone"
+              >Phone number</label
+            >
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              minlength="12"
+              maxlength="12"
+              placeholder="+39 (050) 123-45-67"
+            />
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email">Email</label>
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+              placeholder="example@mail.com"
+            />
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="4"
+              placeholder="Enter text"
+              required
+              minlength="7"
+            >
+            </textarea>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-agreement">
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                name="user-agreement"
+              />
+              <span class="modal-form-checkbox"> </span>
+              <span class="modal-form-agreement-desc">
+                I accept the terms and conditions of the
+                <a
+                  class="modal-form-agreement-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </span>
+            </label>
+          </div>
+
+          <button class="btn btn-accent" type="submin">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
