@@ -477,6 +477,13 @@ main {
 .footer-links .social-link:focus {
     background-color: var(--cl-success);
 }
+.footer-links {
+    margin-right: 80px;
+}
+
+.subscription {
+    
+}
 
 .subscription-caption {
     margin-bottom: 16px;
@@ -488,11 +495,13 @@ main {
 
 .subscription-img {
     margin-left: 16px; 
+    fill: white;
 }
 
 .footer-form {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .footer-form-input {
