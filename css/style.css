@@ -715,12 +715,16 @@ main {
     padding: 72px 24px 24px 24px; 
 }
 
-.modal-form-el:not(:last-child) {
+.modal-form-el {
     margin-bottom: 8px;
 }
 
-.modal-form:last-child {
+.modal-form-el.last-modal-form-el {
     margin-bottom: 24px;
+}
+
+.modal-form-el.prev-last-modal-form-el {
+    margin-bottom: 16px;
 }
 
 .modal-caption {
@@ -848,9 +852,6 @@ main {
 .modal-btn-submit {
     display: block;
     height: 56px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
     margin: 0 auto;
     margin-top: 24px;
 }
