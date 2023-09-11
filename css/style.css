@@ -172,6 +172,7 @@ main {
 }
 
 .accent-button {
+    display: block; 
     background: var(--cl-primary_brand);
     color: var(--cl-white_background);
 
@@ -836,7 +837,7 @@ input[type='checkbox']:checked + .modal-form-checkbox > .modal-form-checkbox-ico
 }
 
 .modal-btn-submit {
-    height: 40px;
+    height: 56px;
     display: flex; 
     justify-content: center; 
     align-items: center; 
