@@ -192,6 +192,31 @@ main {
 .accent-button:focus {
     background: var(--cl-pressed_state);
 }
+
+/* Checked state */
+input[type='checkbox']:checked + .modal-form-checkbox {
+    border-color: transparent;
+    background-color: var(--accent-cl);
+}
+
+/* Focus state */
+input[type='checkbox']:focus-visible + .modal-form-checkbox {
+    outline: 2px solid rgba(253, 146, 34, 0.3);
+    outline-offset: 1px;
+}
+
+.modal-form-checkbox-icon {
+    fill: var(--light-cl);
+    opacity: 0;
+    transform: scale(0.2);
+    transition: fill var(--trns-fast), opacity var(--trns-fast),
+    transform cubic-bezier(0.68, -0.55, 0.27, 1.55) 300ms;
+}
+
+input[type='checkbox']:checked + .modal-form-checkbox > .modal-form-checkbox-icon {
+    opacity: 1;
+    transform: scale(1);
+}
 /* general styles end */
 
 
@@ -816,5 +841,9 @@ main {
     justify-content: center; 
     align-items: center; 
     margin: 0 auto;
+}
+
+.modal-form-agreement-link {
+    color: var(--cl-primary_brand); 
 }
 /* modal window end */
