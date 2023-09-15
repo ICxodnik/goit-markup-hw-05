@@ -848,7 +848,6 @@ main {
     justify-content: center;
     fill: transparent; 
     margin-right: 8px;
-    display: inline-block;
 }
 
 .modal-btn-submit {
@@ -859,6 +858,7 @@ main {
 }
 
 .modal-form-agreement-link {
-    color: var(--cl-primary_brand); 
+    color: var(--cl-primary_brand);
+    text-decoration: underline;
 }
 /* modal window end */
